@@ -31,5 +31,20 @@ $(document).ready(
       }
     );
 
+    // Premendo invio inserisco il nuovo item
+    $("input").keypress(
+      function(event) {
+        if (event.which == 13 || event.keycode == 13) {
+          console.log("Keypress " + event.which);
+          var newText = $("[name='add-field']").val();
+          var context = {
+            text: newText
+          };
+          var html = template(context);
+          $("#todo").append(html);
+        }
+      }
+    );
+
   }
 );
