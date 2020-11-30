@@ -2,6 +2,8 @@
 <html lang="it" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.css" integrity="sha512-f73UKwzP1Oia45eqHpHwzJtFLpvULbhVpEJfaWczo/ZCV5NWSnK4vLDnjTaMps28ocZ05RbI83k2RlQH92zy7A==" crossorigin="anonymous" />
     <!-- link al font Google -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
@@ -18,5 +20,11 @@
 
   <body>
     <h1>js-todo-clone</h1>
+    <ul id="todo"></ul>
+
+    <!-- template di handlebars -->
+    <script id="entry-template" type="text/x-handlebars-template">
+      <li>{{text}} <span><i class="fas fa-times"></i></span></li>
+    </script>
   </body>
 </html>
