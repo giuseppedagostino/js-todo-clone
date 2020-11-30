@@ -25,7 +25,7 @@ $(document).ready(
     }
 
     // Rimuovo l'item che ho fatto
-    $("span").click(
+    $(document).on("click","span",
       function() {
         $(this).parent().remove();
       }
