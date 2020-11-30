@@ -14,3 +14,14 @@ h1 {
   font-size: 48px;
   margin-bottom: 40px;
 }
+ul {
+  list-style: none;
+}
+i {
+  margin-right: 10px;
+  color: red;
+}
+i:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
